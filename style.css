@@ -1,9 +1,88 @@
-.jumbotron{
-   padding-top: 1rem;
-    background-color:rgb(190, 190, 190); 
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=League+Spartan:wght@600&display=swap');
+.navbar{
+    background-color: #0c7a68;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#jumbotron{
+   padding-top: 100px;
+    /* background-color: #365486; */
+    text-align: center;
+    background-image: url('/img/creative.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100vh;
+}
 
+/* #jumbotron .container{
+   
+} */
+
+
+
+.banner-text{
+    color: rgb(255, 254, 254);
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+}
+
+.text span{
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1i{
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+    animation: text 2s 1;
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+    padding-top: 10px;
+ 
+}
+
+.text2i{
+    color: #979797;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
 
 }
+
+#About{
+    /* background-color: #7FC7D9; */
+    /* margin-top: -90px; */
+    background-color: #ffffff;
+    padding-bottom: 40px;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url("http://www.commixturesoft.com/img/shadow3.png");
+    background-repeat: no-repeat;
+}
+
+.Aboutme{
+    padding-top: 2rem;
+
+}
+
+.aboutteks{
+    margin-top: 55px;
+    color: rgb(73, 73, 73);
+    
+}
+
+
+
+.ppicon{
+    box-shadow: 50% black ;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+
+}
+
 .project{
     max-height: 120px;
     display: flex;
@@ -19,3 +98,313 @@
     text-align: center;
     line-height: 110px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .aboutteks{
+        width: 90%;
+        text-align: center;
+    }
+
+    
+
+    .sosialmedia{
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+
+    .aboutteks{
+        margin-top: 20px;
+        padding-left: 20px;
+        
+    }
+
+    .wrapper{
+        text-align: center;
+    }
+
+    .wrapper .icon{
+        text-align: center;
+        padding-left:  17pxx;
+        padding-right: 17px;
+        margin-top: 9px;
+
+    }
+
+
+
+    .footer{
+        
+        font-size: 8px ;
+    }
+
+    /* .container1{
+        display: flex;
+    } */
+
+ }
+
+ /* @media screen and (min-width: 750px) {
+    .aboutteks{
+        width: 100%;
+        text-align: center;
+    }
+    .row22{
+        width: 60%;
+        margin-top: 200px;
+    }
+    ul{
+    position:relative;
+    top:20%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    display:flex;
+    }
+ } */
+
+@keyframes text {
+    0%{
+        color: #ffffff;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 4px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+
+/* index HTML */
+
+.danger {
+    border-color: rgb(201, 21, 21);
+    color: rgb(201, 21, 21);
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  
+  .danger:hover {
+    background: rgb(201, 21, 21);
+    color: white;
+  }
+
+  .footer{
+ 
+    font-size: 12px ;
+    flex-wrap: 800px;
+}
+
+#jumbotron2{
+    padding-top: 100px;
+     /* background-color: #365486; */
+     text-align: center;
+     background-image: url('/img/creative.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     height: 100vh;
+ }
+
+ /* sosial media */
+ .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 0px;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+ 
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  
+ 
+ 
+  .container1{
+    margin-top: 40px;
+    
+  }
+
+  .container2{
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+  /* skill */
+
+
+
+  .progressbar-item {
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar {
+    margin: 0 0 10px;
+    overflow: visible;
+    background: transparent;
+  }
+  
+  .progress-number {
+    padding-bottom: 7px;
+    position: relative;
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #2e2e2e;
+  }
+  
+  .progress-title {
+    z-index: 100;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .progress-number-mark {
+    font-family: var(--progress-font, "Open Sans", sans-serif);
+    font-weight: var(--fw-500);
+    font-size: var(--fs-16);
+    line-height: 1;
+    padding: 8px 8px 7px;
+    border-radius: 3px;
+    color: var(--progress-number-color, #fff);
+    margin-bottom: 4px;
+    border-radius: 3px;
+    background: var(--progress-number-bg, #5f5f5f);
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .down-arrow {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid var(--progress-number-bg, #5f5f5f);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+  
+  .progress-bg {
+    height: 6px;
+    background: var(--progressbar-bg, #f0f0f0);
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .progress-fill {
+    height: 6px;
+    background: var(--progressbar-fill, linear-gradient(to right, #B464FF 0%, #3C64EB 100%));
+    width: 0%;
+    border-radius: 6px;
+  }
+
+
+
+
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
