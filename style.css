@@ -23,6 +23,23 @@ body{
 
 
 
+
+
+/* .text span{
+    text-transform: uppercase;
+    display: block;
+} */
+
+#jumbotron2{
+  padding-top: 100px;
+   /* background-color: #365486; */
+   text-align: center;
+   background-image: url('/img/creative.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   height: 100vh;
+}
 .banner-text{
     color: rgb(255, 254, 254);
     margin-top: 2rem;
@@ -31,15 +48,10 @@ body{
     position: relative;
 }
 
-.text span{
-    text-transform: uppercase;
-    display: block;
-}
-
 .text1i{
     letter-spacing: 1px;
     margin-bottom: 9px;
-    animation: text 2s 1;
+    /* animation: text 1550ms 1; */
     font-family: 'League Spartan', sans-serif;
     position: relative;
     padding-top: 10px;
@@ -169,7 +181,7 @@ body{
     }
  } */
 
-@keyframes text {
+/* @keyframes text {
     0%{
         color: #ffffff;
         margin-bottom: -20px;
@@ -182,7 +194,7 @@ body{
         letter-spacing: 8px;
         margin-bottom: -20px;
     }
-}
+} */
 
 /* index HTML */
 
@@ -207,16 +219,6 @@ body{
     flex-wrap: 800px;
 }
 
-#jumbotron2{
-    padding-top: 100px;
-     /* background-color: #365486; */
-     text-align: center;
-     background-image: url('/img/creative.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: 50%;
-     height: 100vh;
- }
 
  /* sosial media */
  .wrapper .icon{
